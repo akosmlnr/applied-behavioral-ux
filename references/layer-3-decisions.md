@@ -278,3 +278,72 @@ Users prefer the middle option when presented with three:
 - Long-term rewards (annual savings, better outcomes) must be made tangible now, not deferred
 - Show the immediate benefit AND the long-term benefit: "Start free now — save $240/year"
 - Reduce any delay between the user's action and the product's response (optimistic UI updates, skeleton screens, instant saves)
+
+---
+
+## Mental Accounting (Thaler, 1985)
+
+**Source:** Thaler, R. H. (1985). "Mental Accounting and Consumer Choice." *Marketing Science*, 4(3), 199-214.
+
+**Core Finding:** People categorize money into separate "mental accounts" rather than treating all money as fungible. The same $50 feels different depending on which mental account it comes from or goes to.
+
+**Key Mechanisms:**
+- **Transaction utility** — The perceived value of a "good deal" is separate from the acquisition utility (the actual value of the good). A $5 coffee feels overpriced at a diner (negative transaction utility) but acceptable at a premium café (expected, zero transaction utility)
+- **Sunk costs in mental accounts** — Money already spent in an account makes further spending in that account feel cheaper ("I already spent $200 on this trip, what's another $50?")
+- **Budget categories** — People have separate budgets for "food," "entertainment," "tools," etc. Spending from one category doesn't reduce willingness to spend from another
+- **Windfall gains** — Unexpected money (bonuses, gifts, found money) is spent more freely than earned money
+
+**Design Implications:**
+- Frame prices in favorable mental accounts: "It's less than your daily coffee" moves the purchase into the "coffee" account
+- Annual billing works partly because it reframes a monthly subscription into a yearly "investment" account
+- Credits, tokens, and virtual currency shift spending out of the "real money" account, reducing payment pain
+- Bundling works because the total moves into a single "subscription" account rather than individual purchase decisions
+- "You've saved $X this month" leverages the user's mental accounting of savings vs. spending
+
+---
+
+## Zero Price Effect (Shampanier, Mazar & Ariely, 2007)
+
+**Source:** Shampanier, K., Mazar, N., & Ariely, D. (2007). "Zero as a Special Price: The True Value of Free Products." *Marketing Science*, 26(6), 742-757.
+
+**Core Finding:** "Free" is not just cheap — it's a qualitatively different category. The psychological jump from $0 to any positive price is larger than the jump between any two positive prices. This is because:
+- The pain of paying drops to zero at $0 (affect heuristic)
+- Free eliminates the need for a cost-benefit calculation (people don't evaluate whether free things are worth it — they just take them)
+- Free creates a positive affect (getting something for nothing feels good)
+
+**Design Implications:**
+- Free tiers must be valuable enough to create dependence — users will stay on free indefinitely if it meets their needs
+- The free-to-paid conversion is the hardest jump in pricing — consider "first month free" or "free trial of premium" to bridge it
+- "Free forever" features should be genuinely useful but clearly limited — show users what premium unlocks
+- Be careful with "free trial then auto-charge" — users who feel tricked by the zero-to-paid jump will churn and leave negative reviews
+- "Free" in marketing copy is the most powerful single word available — use it for your primary acquisition hook
+
+---
+
+## Affective Forecasting Errors (Wilson & Gilbert, 2003)
+
+**Source:** Wilson, T. D., & Gilbert, D. T. (2003). "Affective Forecasting." *Advances in Experimental Social Psychology*, 35, 345-411.
+
+**Core Finding:** People systematically mispredict how they'll feel in the future. Two key biases:
+
+| Bias | Description | UX Application |
+|---|---|---|
+| **Impact bias** | People overestimate the intensity and duration of future emotional reactions | Users overestimate how much a new product/feature will improve their life |
+| **Durability bias** | People overestimate how long feelings will last | Users overestimate how long the "new car feeling" of a product will persist |
+
+**Design Implications:**
+- **Don't overpromise** in marketing or onboarding — set realistic expectations to avoid disappointment when impact bias corrects
+- Show concrete, immediate value rather than aspirational transformation: "Save 2 hours this week" > "Transform your productivity forever"
+- **Onboarding:** Users overestimate the pain of setup and underestimate long-term value — front-load value delivery to compensate
+- **Cancellation flows:** Users overestimate how good leaving will feel (saving money!) and underestimate how much they'll miss the product. Reminding them of their usage data, stored content, and integrations helps correct the forecasting error
+- **Upgrade prompts:** Users underestimate how much they'll use premium features — show usage projections or "users like you" data to correct predictions
+
+---
+
+## Sunk Cost Fallacy (Cross-Reference)
+
+The tendency to continue investing in something because of prior investment, even when the investment no longer serves current goals.
+
+**Already covered by:** Endowment Effect (users value what they've invested in), Status Quo Bias (users stick with current path), and Switching Costs (Layer 5 — accumulated investment makes leaving harder).
+
+**Note:** In UX evaluation, sunk cost rarely produces a different recommendation than what Endowment Effect + Status Quo Bias already generate. The recommendation is the same: "Users have invested time/data/learning — make it visible, and don't ask them to abandon it." The sunk cost fallacy can be weaponized (guilt-tripping users to stay) — this violates the ethical guardrails on Autonomy.

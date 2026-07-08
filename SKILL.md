@@ -111,6 +111,13 @@ Layer 5 — Product Behavior (What the product DOES)
 ### Core Principles
 
 **Cognitive Load Theory** (Sweller) — Working memory is limited (~4 chunks); manage three types of load:
+
+**Conservation of Complexity** (Tesler's Law) — Every application has inherent complexity that cannot be eliminated, only moved:
+- Complexity can be moved between the user and the system, but never removed entirely
+- Hiding complexity behind a simple interface doesn't eliminate it — it just means the system must be smart enough to handle it
+- **Implication:** Before simplifying a UI, ask: "Where did the complexity go?" If the answer is "the user has to figure it out themselves," the design failed. Defaults, automation, and smart suggestions absorb complexity. Removing features without alternative solutions eliminates value, not complexity.
+
+**Cognitive Load Theory** (Sweller) — Working memory is limited (~4 chunks); manage three types of load:
 - **Intrinsic load** — The inherent complexity of the task (minimize by simplifying the task)
 - **Extraneous load** — Unnecessary processing from poor design (eliminate: split-attention effect, redundancy effect, clutter)
 - **Germane load** — Mental effort dedicated to learning/understanding (maximize: good visualizations, progressive disclosure)
@@ -142,6 +149,12 @@ Layer 5 — Product Behavior (What the product DOES)
 - **Navigation cost** — Users minimize cost of finding next valuable item (reduce clicks, provide breadcrumbs, persistent navigation)
 - **Implication:** If users can't "smell" the value of a next click, they leave. Every link, button, and nav item must promise clear value.
 
+**Serial Position Effect** — Items at the beginning and end of a list are remembered best:
+- **Primacy effect** — First items receive more attention and are recalled better (first navigation item, top pricing tier, first feature in a list)
+- **Recency effect** — Last items also receive disproportionate recall (last nav item, bottom pricing tier, final CTA)
+- **Middle items are least remembered** — The middle of any list, menu, or feature set gets the least attention
+- **Implication:** Place the most important items first and last in any ordered list. Navigation, pricing tiers, feature comparisons, and error messages all follow this pattern. Never bury critical actions in the middle.
+
 **Mere Exposure Effect** (Zajonc, 1968) — Repeated exposure increases preference, no reward needed:
 - Familiar interfaces are preferred partly because of repeated exposure, not just usability
 - New design patterns are initially disliked but grow on users with interaction
@@ -164,9 +177,11 @@ Layer 5 — Product Behavior (What the product DOES)
 - [ ] Are choice points limited to ≤7 visible options?
 - [ ] Does every link/CTA have strong information scent?
 - [ ] Has extraneous cognitive load been eliminated?
+- [ ] Are the most important items placed first and last in ordered lists (serial position)?
 - [ ] Is the experience consistent enough to leverage mere exposure preference?
 - [ ] Are there appropriate progress indicators to leverage the Zeigarnik effect?
 - [ ] Does the challenge level match the user's skill (flow channel)?
+- [ ] Where complexity was removed from the UI — did the system absorb it (Tesler's Law)?
 
 ---
 
@@ -230,6 +245,21 @@ Layer 5 — Product Behavior (What the product DOES)
 - Explains why users abandon long flows, skip setup, and prefer instant gratification
 - **Implication:** Deliver value as fast as possible. Every second of delay between action and reward is conversion leakage. "Instant" previews, immediate feedback, and zero-delay confirmations are not luxuries — they're behavioral necessities.
 
+**Mental Accounting** (Thaler, 1985) — People categorize money into separate "mental accounts":
+- A $50 dinner feels different from a $50 monthly subscription, even though it's the same amount — because they come from different mental accounts ("entertainment" vs. "tools")
+- Users treat credits, tokens, and virtual currency differently from real money (spending credits feels cheaper than spending cash, even when economically equivalent)
+- **Implication:** Frame prices in favorable mental accounts. Annual billing "saves" money per month because users evaluate it against a monthly account. Credits and free trials reduce payment pain by shifting the transaction out of the "real money" account. Bundling works because it moves the total into a single "subscription" account rather than individual purchases.
+
+**Zero Price Effect** (Shampanier, Mazar & Ariely, 2007) — "Free" is not just cheap; it's a qualitatively different category:
+- Users disproportionately choose free options over paid ones, even when the paid option is objectively far better value
+- The pain of paying drops to zero at $0, creating an irrational preference jump
+- **Implication:** Free tiers must be valuable enough to create dependence but not so complete that users never see the need to upgrade. The jump from free to paid is the hardest conversion point — consider "first month free" or "free trial of premium" to bridge the gap, because the psychological distance between $0 and $1 is larger than between $1 and $10.
+
+**Affective Forecasting Errors** (Wilson & Gilbert, 2003) — People systematically mispredict how they'll feel in the future:
+- **Impact bias** — Users overestimate how much a feature/product will improve their life (overpromising creates disappointment)
+- **Durability bias** — Users overestimate how long positive or negative feelings will last
+- **Implication:** Don't overpromise in marketing or onboarding — set realistic expectations. Show concrete, immediate value rather than aspirational transformation. In cancellation flows, users overestimate how good leaving will feel — remind them of what they'll lose (this isn't manipulation; it's helping them make a prediction they're systematically bad at).
+
 ### Layer 3 Evaluation Checklist
 - [ ] Are outcomes framed relative to a reference point (not just absolute)?
 - [ ] Is the default option the one you want users to choose?
@@ -241,6 +271,9 @@ Layer 5 — Product Behavior (What the product DOES)
 - [ ] Is the copy matching the user's regulatory state (promotion vs. prevention)?
 - [ ] Is near-action language concrete and far-action language value-driven (CLT)?
 - [ ] Is value delivered immediately or as close to instant as possible?
+- [ ] Is pricing framed in favorable mental accounts (mental accounting)?
+- [ ] Does the free-to-paid transition bridge the zero price effect gap?
+- [ ] Are value promises realistic, not overinflated (affective forecasting)?
 
 ---
 

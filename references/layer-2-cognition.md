@@ -205,3 +205,75 @@ Low Skill              High Skill
 - Tasks that are too hard (anxiety → abandonment)
 - Unclear goals or progress indicators
 - Lag, errors, or unpredictable behavior
+
+---
+
+## Serial Position Effect (Primacy & Recency)
+
+**Source:** Ebbinghaus, H. (1885/1964). *Memory: A Contribution to Experimental Psychology*. Dover.
+
+**Core Finding:** Items at the beginning (primacy) and end (recency) of a list are remembered significantly better than items in the middle. This is one of the most robust findings in memory research.
+
+**Design Implications:**
+- **Navigation:** First and last nav items get disproportionate attention — place the most important actions there
+- **Pricing tiers:** Leftmost and rightmost tiers are most memorable; the middle tier benefits from the compromise effect but is least remembered in isolation
+- **Feature lists:** First and last features in comparison tables carry disproportionate weight — lead with your strongest feature, end with your second strongest
+- **Error messages:** In multi-field forms, the first error gets the most attention (also related to serial position)
+- **CTA groups:** If you have multiple buttons, the first and last get the most clicks
+- **Menus and dropdowns:** Items at the top and bottom are selected most frequently
+
+---
+
+## Conservation of Complexity (Tesler's Law)
+
+**Source:** Tesler, L. (1984). "The Limits of Intelligence." *Proceedings of the SIGCHI Conference on Human Factors in Computing Systems*.
+
+**Core Finding:** "Every application has an inherent amount of complexity that cannot be removed, only moved between user and system." Complexity is conserved — simplifying the UI means the system must be smarter.
+
+**Design Implications:**
+- Before removing a feature to "simplify," ask: did you actually reduce complexity, or just push it onto the user?
+- Smart defaults absorb complexity (the system makes good choices so the user doesn't have to)
+- AI-powered suggestions and automation are complexity absorbers — they let the system handle the inherent complexity
+- Progressive disclosure redistributes complexity across time (showing advanced options later, not eliminating them)
+- The difference between simplifying (removing capability) and abstracting (hiding complexity behind a better interface) is critical
+- When users say "make it simpler," they often mean "make the system handle the complexity for me"
+
+---
+
+## Mayer's Multimedia Learning Principles (2009)
+
+**Source:** Mayer, R. E. (2009). *Multimedia Learning* (2nd ed.). Cambridge University Press.
+
+**Core Finding:** 25+ years of research synthesized into 12 evidence-based principles for designing instructional content. The most UX-relevant:
+
+| Principle | Description | UX Application |
+|---|---|---|
+| **Coherence** | Remove extraneous material | Onboarding should only teach what's needed immediately; cut decorative illustrations, background music, extra details |
+| **Contiguity** | Place related elements together | Labels next to (not below) form fields; explanations next to the feature they describe |
+| **Modality** | Use narration + graphics rather than text + graphics | Video walkthroughs with voiceover outperform text overlays for onboarding |
+| **Signaling** | Highlight essential information | Visual cues (arrows, highlights, step indicators) direct attention to what matters |
+| **Segmenting** | Present complex lessons in learner-paced segments | Break long tutorials into steps the user controls — don't auto-play a 5-minute walkthrough |
+| **Pre-training** | Teach key concepts before the lesson | Name key features/terms before explaining how to use them (familiar terminology reduces cognitive load) |
+
+**Design Implications:**
+- Directly applicable to onboarding flows, help documentation, and instructional UI
+- Explains WHY video onboarding outperforms text-only onboarding (modality principle)
+- Explains why progressive disclosure works better than information dumps (segmenting + coherence)
+- Most effective when combined with Cognitive Load Theory (already covered in this layer)
+
+---
+
+## Dual-Task Interference / Task Switching Cost
+
+**Sources:**
+- Miyake, A., et al. (2000). "The Unity and Diversity of Executive Functions." *Journal of Experimental Psychology: General*, 129(1), 4-28.
+- Monsell, S. (2003). "Task Switching." *Trends in Cognitive Sciences*, 7(3), 134-140.
+
+**Core Finding:** Switching between tasks has a measurable cognitive cost. Each switch degrades performance on both tasks. The cost persists even when the switch is voluntary.
+
+**Design Implications:**
+- Modal dialogs that interrupt a primary task impose dual-task interference (user must manage both the modal and their original goal)
+- Inline validation (showing errors next to the field) is better than post-submission validation (which forces a switch to an "error review" task)
+- Multi-step flows should maintain single-task focus — don't ask users to configure settings while also completing a primary action
+- Context switching between product features (e.g., switching from editing to viewing to settings) should be minimized or made seamless
+- Notifications during active use are the most common source of forced task switching in products
