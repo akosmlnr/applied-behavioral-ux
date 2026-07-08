@@ -34,7 +34,7 @@ Techniques that reduce load for novices can increase load for experts (because e
 |---|---|---|
 | Navigation items | 5-7 | Users scan nav items as chunks |
 | Form fields per group | 3-5 | More feels overwhelming |
-| Pricing tiers | 3 | Good/Better/Best is the gold standard |
+| Pricing tiers | 3-4 | 3 is common; the optimal count depends on your pricing model and market complexity |
 | List items per view | 7-10 | Beyond this, add search/filter |
 | Notification categories | 3-5 | More creates notification fatigue |
 | Onboarding steps | 3-5 total | Each step should be atomic |

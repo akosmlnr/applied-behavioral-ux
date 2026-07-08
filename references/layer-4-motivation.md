@@ -96,7 +96,7 @@ Amotivation ← External Regulation ← Identified Regulation ← Integrated Reg
 - Profile completion: "80% complete — add a photo to finish"
 - Multi-step flows: "Step 3 of 4"
 - Course/learning progress: visual bar + percentage
-- Gamification: XP bars, level progress
+- Gamification: Achievement signals and progress indicators tied to real product milestones (streaks, completion states, meaningful thresholds)
 
 **2. Artificial Head-Starts**
 - Loyalty programs: Pre-stamp cards
@@ -104,9 +104,9 @@ Amotivation ← External Regulation ← Identified Regulation ← Integrated Reg
 - Freemium: "You're 1 step away from Pro features"
 
 **3. Milestone Celebration**
-- Celebrate at 25%, 50%, 75%, 100%
-- Each celebration resets the "recent progress" anchor
-- "You've reached Level 5! Only 2 more to unlock…"
+- Celebrate meaningful completions (profile complete, first project done, integration connected)
+- Use subtle positive feedback (checkmark animation, brief message) for partial progress — avoid over-celebrating arbitrary percentage markers
+- Reserve more visible celebration for meaningful thresholds that represent real accomplishment
 
 **4. Sub-Goals**
 - Break large goals into visible sub-goals

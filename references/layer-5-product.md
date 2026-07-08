@@ -68,11 +68,12 @@ Sign-up → Setup → First Action → "Aha!" Moment → Value Realization
 - Examples: Slack (no tutorial — just messages with contextual tips)
 - When to use: For products with many features where most are secondary
 
-### Type 4: Commitment Escalation Onboarding
-**Start with easy asks, build to larger investments.**
-- Pattern: Name → Email → Connect one account → Invite one person → Set preferences
-- Each step is easy but increases the user's investment
-- Examples: LinkedIn (connect contacts → add experience → endorse others)
+### Type 4: Progressive Investment Onboarding
+**Start with minimal asks, deepen engagement as value is demonstrated.**
+- Pattern: Core action first → optional enrichment later (profile, connections, preferences)
+- Each investment ask should come AFTER the user has experienced corresponding value
+- Examples: Slack (start messaging, add integrations as you need them), Figma (start designing, invite collaborators when sharing)
+- Key principle: Never ask for investment before the user has received value
 - When to use: When network effects and data richness drive value
 
 ### Anti-Patterns in Onboarding
@@ -165,7 +166,7 @@ Awareness → Interest → Consideration → Intent → Purchase
 ┌─────────────┐  ┌─────────────┐  ┌─────────────┐
 │   Starter    │  │   Pro ★     │  │  Enterprise │
 │   $9/mo     │  │   $29/mo    │  │   Custom    │
-│             │  │  RECOMMENDED│  │             │
+│             │  │ (highlighted)│  │             │
 │  Basic      │  │  Everything │  │  Everything │
 │  features   │  │  in Starter  │  │  in Pro +   │
 │             │  │  + Advanced  │  │  Priority   │
@@ -179,8 +180,8 @@ Awareness → Interest → Consideration → Intent → Purchase
 - Show competitor comparison with your price lower
 
 **Conversion Optimization Checklist:**
-- [ ] Three tiers maximum
-- [ ] Recommended tier visually prominent
+- [ ] Tier count appropriate for your market and pricing model (3 is common but not mandatory)
+- [ ] Recommended tier visually prominent through design treatment, not just a badge
 - [ ] Monthly vs. annual toggle with savings highlighted
 - [ ] Feature comparison table
 - [ ] Social proof on the page
@@ -260,13 +261,8 @@ The psychological discomfort of spending depends on:
 - Credits/tokens: "50 credits" abstracts away real dollar amounts
 - Bundled features: "All features for $29" hurts less than "$10 for A + $8 for B + $11 for C"
 
-### The "Pennies-a-Day" Frame
-Reframe expensive items into per-day costs:
-- "$365/year" → "$1/day"
-- "$120/month" → "$4/day"
-- "$1000 lifetime" → "$2.73/day over a year"
-
-This works because daily amounts feel manageable, even when the total is the same.
+### Per-Day and Per-Month Framing
+For annual billing, show the total annual price alongside the effective monthly cost (e.g., "$290/year ($24/mo)") to make the value tangible. Highlight savings from annual billing explicitly ("$58 savings vs monthly"). For high-value products, frame the price against the value delivered ("$290/year to save 10+ hours/month") rather than reducing it to daily increments, which can feel condescending to professional buyers. Test whether daily, monthly, or value-based framing resonates with your specific audience.
 
 ### Feature Presentation
 - **Bundle features** into themes ("Analytics Suite" not "Charts + Graphs + Reports + Filters")
@@ -276,6 +272,6 @@ This works because daily amounts feel manageable, even when the total is the sam
 ### Price Anchoring in Practice
 1. Start with the most expensive option or show the "full value"
 2. Reveal discounts relative to the anchor
-3. Use strikethrough pricing ($79 ~~$149~~)
+3. Use anchoring to show value — display the regular price alongside the discounted price using your design system's treatment. For premium products, consider subtle anchors (annual vs monthly side-by-side) over prominent strikethroughs, which can feel discount-retail rather than premium. Test different visual treatments for your audience
 4. Show per-unit pricing for bulk purchases
-5. Add "Most Popular" badge to the profit-maximizing tier
+5. Visually distinguish the recommended tier through subtle design treatment (highlighted border, elevated shadow, slightly larger scale) rather than heavy-handed badges. Many modern products (Linear, Vercel, Raycast) avoid explicit badges entirely and let visual hierarchy speak

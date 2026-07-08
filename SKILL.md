@@ -52,28 +52,26 @@ Layer 5 — Product Behavior (What the product DOES)
 - **Symmetry** — Symmetrical elements feel unified (use for headers, hero sections)
 - **Past Experience** — Recognition overrides grouping (leverage familiar patterns)
 
-**Yarbus' Eye-Tracking Findings** (1967) — Eye movements are task-driven, not random:
-- Users' scan paths change dramatically based on their current goal
-- A user looking for prices scans completely differently from one evaluating aesthetics
-- **Implication:** Design for the primary task, not for "general viewing." Place task-critical elements along predicted scan paths.
+**Yarbus' Eye-Tracking Findings** (1967) — Users' attention is driven by their current goal, not by layout alone:
+- A user looking for pricing scans completely differently from one evaluating design quality
+- **Implication:** Identify the primary task for each screen and optimize its layout for that task. Use modern research methods (session recordings, heatmaps, click testing) to validate actual scan behavior rather than assuming patterns. Task-critical elements should be immediately findable — place them in expected positions based on user mental models.
 
 **Fitts's Law** (1954) — Time to acquire a target is a function of distance and size:
 - `T = a + b · log₂(D/W + 1)` where D = distance, W = target width
-- Larger + closer targets are faster to reach
+- The closer and larger a target is, the faster it is to acquire
 - **Implications:**
-  - Primary actions should be large and close to where the user is already looking
-  - Click targets should be at least 44×44pt (Apple HIG) / 48×48dp (Material)
+  - Primary actions should be the most visually prominent interactive element — achieved through contrast (filled vs outlined), color, weight, and spatial emphasis rather than just physical size
+  - On touch interfaces, interactive targets must meet platform minimums (44×44pt on iOS, 48×48dp on Android). On desktop, ensure targets are comfortable for pointer precision and adequately spaced
   - Place destructive actions far from frequent actions (slow the user down deliberately)
-  - Pin important CTAs to edges/corners (they act as "infinite targets")
+  - On desktop, persistent navigation in fixed/sticky positions benefits from edge arrest. On touch devices, edges are less accessible — use sticky positioning within thumb zones
 
-**Visual Hierarchy** — Users don't "read" interfaces; they scan them in an F-pattern or Z-pattern:
-- Most important elements: top-left (start point), largest size, highest contrast
-- Secondary: scan-line positions, medium weight
-- Tertiary: lower-right, smallest size, reduced contrast
-- Use **no more than 3 levels** of visual hierarchy per screen
+**Visual Hierarchy** — Users scan interfaces rather than reading them:
+- Scan patterns vary by layout, device, and content type: F-patterns on text-heavy desktop pages, vertical center scanning on mobile single-column, zigzag on comparison pages
+- Rather than designing for a specific scan pattern, ensure primary actions and key content are immediately visible above the fold (or at the top of the scroll on mobile)
+- Use your typography and spacing system to create clear hierarchy levels — typically 3-5 distinct levels through size, weight, and color contrast
 
 **Attention** — Selective attention is limited:
-- **Von Restorff Effect** — One different element stands out (make the primary CTA the one "different" element)
+- **Von Restorff Effect** — A visually distinct element in a set of similar elements is most likely to be noticed. Make the primary CTA the most prominent interactive element through contrast, color, and weight — not through unusual size or shape
 - **Inattentional Blindness** — Users literally don't see things outside their attention tunnel (don't put critical info next to a busy animation)
 - **Change Blindness** — Users miss gradual changes (use obvious transitions for state changes)
 
@@ -93,11 +91,11 @@ Layer 5 — Product Behavior (What the product DOES)
 - **Implication:** CTA colors aren't universal "hacks." Use color strategically to match the emotional tone of the action (green for positive actions, red for warnings/danger, blue for trust/communication)
 
 ### Layer 1 Evaluation Checklist
-- [ ] Does the layout follow a natural scan pattern (F or Z)?
+- [ ] Is the layout optimized for the primary task (not just a generic scan pattern)?
 - [ ] Are Gestalt groupings used intentionally (not creating false relationships)?
-- [ ] Are interactive targets large enough and close enough per Fitts's Law?
-- [ ] Is there exactly ONE visually dominant element (the primary action)?
-- [ ] Are task-critical elements on predicted eye-scan paths?
+- [ ] Are interactive targets appropriately sized and spaced for both desktop and touch?
+- [ ] Is the primary action the most visually prominent interactive element?
+- [ ] Are task-critical elements in expected, immediately findable positions?
 - [ ] Does the visual design evoke positive emotional response (visceral level)?
 - [ ] Is the interface visually consistent enough to leverage processing fluency?
 - [ ] Are colors used contextually (not relying on generic "conversion color" myths)?
@@ -127,7 +125,7 @@ Layer 5 — Product Behavior (What the product DOES)
 - Chunk information into groups of 3-5 items maximum
 - Navigation menus: 5-7 items max per level
 - Form fields: group related fields and show one group at a time
-- Pricing tiers: 3 options (never more than 4)
+- Pricing tiers: keep the number of simultaneously visible tiers small (typically 3-4); each tier must have a clear value differentiation
 
 **Mental Models** (Johnson-Laird) — Users carry internal representations of how things work:
 - Users approach new interfaces with mental models from prior experience
@@ -438,8 +436,8 @@ The moment a user first experiences the product's core value — this must happe
 - **Frequency vs. Magnitude** — Many small payments feel worse than one larger payment. Bundle when possible.
 
 **Design Rules:**
-1. Three pricing tiers maximum (good / better / best)
-2. Highlight the recommended tier visually and with a "Most Popular" badge
+1. For tiered pricing, 3 tiers is the most common and well-understood structure. The optimal number depends on your market and pricing model — usage-based products may not fit neatly into 3 tiers. What matters is that each tier has a clear, distinct value story
+2. Visually distinguish the recommended tier — through subtle design treatment (highlighted border, elevated shadow, slightly larger scale, or prominent position). Avoid heavy-handed badges; many modern products let visual hierarchy speak for itself
 3. Anchor prices with the annual equivalent
 4. Show what users save by choosing annual
 5. Use feature comparison for tiers, but emphasize value stories, not feature lists

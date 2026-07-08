@@ -9,19 +9,20 @@
 - W = width of the target along the axis of motion
 - a, b = empirical constants (device/input-dependent)
 
-**Key ratios and thresholds (derived from research):**
+**Key thresholds (derived from research):**
 
-| Target Size | Typical Usage |
+| Context | Guidance |
 |---|---|
-| 44×44 pt (iOS) / 48×48 dp (Android) | Minimum touch target |
-| 60×60+ px | Primary CTAs on web |
-| 8×16 px minimum | Desktop pointer targets (but aim larger) |
+| Touch targets | Minimum 44×44pt (iOS HIG) / 48×48dp (Material Design) — non-negotiable for mobile/tablet |
+| Desktop pointer targets | No strict minimum — ensure comfort for pointing and adequate spacing to prevent misclicks |
+| Primary CTAs | Most visually prominent through contrast, weight, and spacing — not necessarily through raw size |
+| Responsive designs | Must meet touch minimums at mobile breakpoints; use fluid sizing and spacing scales |
 
 **Practical Applications:**
-- **Edge/corner targets:** The cursor stops at screen edges, making them effectively infinite in one dimension. Place primary navigation at screen edges (macOS menu bar, Windows taskbar). Pin primary CTAs to screen edges when possible.
-- **Toolbar grouping:** Fitts's Law explains why toolbar items should be close together with generous padding — it reduces D between sequential actions.
-- **Destructive actions:** Place Delete, Remove, etc. far from common actions and require deliberate mouse travel (e.g., drag-to-trash, not click-to-delete).
-- **Hover targets:** Dropdown menus should have no gaps between trigger and menu items. If the cursor enters the gap, the menu closes (D becomes huge, W becomes tiny).
+- **Edge/corner targets (desktop):** The cursor stops at screen edges, making them effectively infinite in one dimension. This is why fixed/sticky headers and sidebars work well on desktop. On touch devices, edges are less accessible due to device bezels and safe areas — use sticky positioning within comfortable thumb zones instead.
+- **Action grouping:** Related actions should be spatially grouped — it reduces the distance between sequential interactions. In modern UIs, this applies to icon clusters in nav bars, grouped action buttons in tool panels, and contextually clustered menu items.
+- **Destructive actions:** Place Delete, Remove, etc. far from common actions and require deliberate travel or confirmation (e.g., confirmation dialogs, drag-to-trash).
+- **Dropdown menus (desktop):** On desktop, hover-triggered dropdowns should eliminate gaps between the trigger and menu to prevent accidental closure during mouse movement. On mobile/touch, hover is unavailable — use tap-to-toggle menus, bottom sheets, or full-screen selectors. For cross-platform consistency, many modern products use click/tap-to-open everywhere.
 
 ## Yarbus — Task-Driven Scanning Patterns
 
@@ -40,7 +41,7 @@
 ### Proximity
 - Card UIs work because content within the card boundary is proximate
 - Whitespace between sections creates natural grouping without borders
-- Form field grouping: place related fields within 8-16px of each other, separate groups by 24-32px+
+- Form field grouping: use tighter spacing within related field groups and significantly larger spacing between distinct groups. Use your design system's spacing scale consistently — typically 2-3 steps within groups and 4-6 steps between groups
 
 ### Similarity
 - Color-coding categories: all "warning" elements in amber, all "success" in green
@@ -73,16 +74,17 @@
 - Asymmetry draws attention — use for emphasis, not for layouts
 
 ### Past Experience
-- Gear icon = settings (even though it looks nothing like physical settings)
+- Gear icon = settings (universally recognized despite no physical resemblance)
 - Magnifying glass = search
-- Floppy disk = save (even though most users have never seen one)
-- When breaking convention, ensure the new pattern is clearly taught
+- Hamburger menu = navigation (evolved from a literal menu metaphor)
+- Cloud icon = sync/storage (modern replacement for physical storage metaphors)
+- When breaking convention, ensure the new pattern is clearly taught and consistently applied
 
 ## Attention — Advanced Patterns
 
 ### Von Restorff Effect (Isolation Effect)
-- In a list of 5 identical items, the one that's different (color, size, shape) is most likely to be remembered
-- Application: Primary CTA should be the ONE visually different element on the page
+- In a set of similar items, the one that is visually distinct is most likely to be noticed and remembered
+- Application: The primary CTA should be the most visually prominent interactive element — through contrast (filled vs outlined), color (brand vs neutral), weight (bold vs regular), or spacing (more padding). Avoid making multiple elements compete for the same level of prominence, which dilutes the effect
 - Warning: If multiple elements are "different," the effect is lost. Use sparingly.
 
 ### Inattentional Blindness
@@ -96,9 +98,9 @@
 - Tab switching with subtle changes often goes unnoticed — use clear visual diffs
 
 ### Banner Blindness
-- Users have learned to ignore areas that typically contain ads (top banners, right sidebars)
-- Application: Don't place critical content in ad-like positions or formats
-- If using a banner for legitimate content, make it clearly non-ad (different styling)
+- Users have learned to ignore visual patterns associated with advertisements — horizontal bars across the top of content, pop-ups, and side panels that look promotional
+- Application: Don't place critical content in positions or formats that resemble ads. If using a banner or announcement for legitimate product content, ensure it uses your product's native design language rather than ad-like styling (no flashing, no generic stock photos, no exaggerated marketing language)
+- Modern layouts are often single-column and full-width, so "banner blindness" more commonly manifests as ignoring full-width announcement strips — make these feel native to your product UI
 
 ---
 
