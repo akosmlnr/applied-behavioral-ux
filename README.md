@@ -105,20 +105,21 @@ This framework synthesizes findings from 50+ peer-reviewed papers and seminal wo
 
 ## How to Use
 
-### Evaluate an existing product or flow
-**If a URL is available**, browse the live product directly using an agent browser (if available). Observe the actual interface, interactions, and flow as a real user would — this gives you a far more accurate evaluation than screenshots or code alone. Then walk through each layer top-to-bottom.
+Add this skill to your AI coding agent (ZCode, Cursor, etc.) and it will automatically activate when you ask for UX evaluations, design reviews, conversion optimization, or behavioral analysis.
 
-**If no browser is available**, use screenshots, descriptions, or code. Walk through each layer top-to-bottom. For each layer, identify what's working and what violates the principle. End with prioritized recommendations.
+### Evaluate a product
+Share a URL, screenshot, or describe the interface. The framework walks through all 5 layers — perception, cognition, decision making, motivation, and product behavior — scoring each and delivering prioritized recommendations.
 
-### Design a new feature or flow
-Walk through each layer bottom-up (Layer 5 → Layer 1) to ground design decisions in behavioral outcomes first, then work back to visual execution.
+### Design a new feature
+Describe what you're building. The framework works bottom-up from behavioral outcomes (Layer 5) to visual execution (Layer 1), ensuring every design decision is grounded in research.
 
-### Diagnose a specific problem
-Jump to the relevant layer:
-- Conversion isn't converting? → **Layer 3 (Decision Making)**
-- Users aren't finding features? → **Layer 2 (Cognition)**
-- Users churn after signing up? → **Layer 5 (Product Behavior) → Activation/Onboarding**
-- Engagement is declining? → **Layer 4 (Motivation) → Habit Formation**
+### Debug a specific problem
+Jump straight to the relevant layer:
+- **Low conversion?** → Layer 3 (Decision Making)
+- **Users can't find things?** → Layer 2 (Cognition)
+- **Churn after signup?** → Layer 5 (Activation/Onboarding)
+- **Declining engagement?** → Layer 4 (Motivation)
+- **Visual design issues?** → Layer 1 (Perception)
 
 ## Ethical Use
 
