@@ -18,6 +18,46 @@ A research-grounded framework for evaluating and designing user experiences. Unl
 ## Framework Overview
 
 ```
+
+## Mobile Considerations (Cross-Layer)
+
+Mobile is not just "smaller desktop." Several behavioral dynamics are genuinely unique to mobile and affect how all five layers apply.
+
+**Thumb Zone Reachability** (Hoober, 2013; 1,333-person observational study) — 49% of users hold phones one-handed, 36% cradle (one hand holds, other finger taps), 15% use two hands. The thumb is the dominant input mechanism.
+- Design for the "natural zone" (center-bottom of screen) for primary actions
+- Place frequent actions within easy thumb reach; secondary actions can go in "stretch" zones
+- Bottom navigation bars align with thumb ergonomics better than top tabs on phones
+- Users shift grip mid-session — designs must be robust to changing grip types
+
+**Divided Attention as Mobile Baseline** — Mobile use frequently occurs while walking, in transit, or in social situations. Desktop use is predominantly stationary and focused.
+- Design for degraded cognitive states as the baseline, not as an edge case
+- Environmental + digital distractions compound multiplicatively (not additively) to degrade task performance
+- Mobile interfaces must work in 30-second attention bursts, not sustained focus sessions
+
+**Screen Size as Natural Progressive Disclosure** (Al-Mushasha et al., 2021; n=1,570) — Counterintuitively, smaller screens produced lower cognitive load than larger screens for the same content. The viewport constrains visible content, reducing extraneous load from information overload and forcing sequential processing.
+- Don't try to "fit desktop on mobile" — leverage the natural content limitation
+- Mobile's constraint is a feature: it forces progressive disclosure by default
+- Related content must appear together on mobile (avoid split-attention from scrolling between diagram and label)
+
+**Smartphone "Mere Presence" Brain Drain** (Ward et al., 2017) — The mere presence of one's own smartphone reduces available cognitive capacity, even when turned off. A desktop computer nearby does not produce this effect.
+- Mobile users start with less cognitive capacity before any UI complexity is added
+- Simplify mobile interfaces beyond what seems "fair" — the user's cognitive budget is already reduced
+- This partially explains why mobile conversion rates are consistently lower than desktop
+
+**Lower Abandonment Cost** — Alternative apps are one tap away in the app store. Desktop users face higher switching costs (download, install, configure).
+- Mobile users are less tolerant of friction, slow performance, and confusing flows
+- First impression matters more on mobile — users leave faster
+- Every step in a mobile flow must justify its existence; there's no patience for "nice to have" steps
+
+### Mobile Evaluation Checklist
+- [ ] Are primary actions within easy thumb reach (natural zone)?
+- [ ] Does the design work for divided-attention use (transit, walking, multitasking)?
+- [ ] Does the mobile layout leverage progressive disclosure naturally (not trying to be desktop)?
+- [ ] Is the cognitive load budgeted for reduced mobile capacity (brain drain)?
+- [ ] Does every step in the flow justify itself (given low abandonment cost)?
+
+---
+
 Layer 1 — Perception (How users SEE)
   Gestalt · Yarbus · Fitts · Visual Hierarchy · Attention · Emotional Design · Processing Fluency
        ↓
@@ -516,44 +556,6 @@ When designing a feature/flow, produce output in this structure:
 - [Specific, actionable guidance for implementation]
 ```
 
-## Mobile Considerations (Cross-Layer)
-
-Mobile is not just "smaller desktop." Several behavioral dynamics are genuinely unique to mobile and affect how all five layers apply.
-
-**Thumb Zone Reachability** (Hoober, 2013; 1,333-person observational study) — 49% of users hold phones one-handed, 36% cradle (one hand holds, other finger taps), 15% use two hands. The thumb is the dominant input mechanism.
-- Design for the "natural zone" (center-bottom of screen) for primary actions
-- Place frequent actions within easy thumb reach; secondary actions can go in "stretch" zones
-- Bottom navigation bars align with thumb ergonomics better than top tabs on phones
-- Users shift grip mid-session — designs must be robust to changing grip types
-
-**Divided Attention as Mobile Baseline** — Mobile use frequently occurs while walking, in transit, or in social situations. Desktop use is predominantly stationary and focused.
-- Design for degraded cognitive states as the baseline, not as an edge case
-- Environmental + digital distractions compound multiplicatively (not additively) to degrade task performance
-- Mobile interfaces must work in 30-second attention bursts, not sustained focus sessions
-
-**Screen Size as Natural Progressive Disclosure** (Al-Mushasha et al., 2021; n=1,570) — Counterintuitively, smaller screens produced lower cognitive load than larger screens for the same content. The viewport constrains visible content, reducing extraneous load from information overload and forcing sequential processing.
-- Don't try to "fit desktop on mobile" — leverage the natural content limitation
-- Mobile's constraint is a feature: it forces progressive disclosure by default
-- Related content must appear together on mobile (avoid split-attention from scrolling between diagram and label)
-
-**Smartphone "Mere Presence" Brain Drain** (Ward et al., 2017) — The mere presence of one's own smartphone reduces available cognitive capacity, even when turned off. A desktop computer nearby does not produce this effect.
-- Mobile users start with less cognitive capacity before any UI complexity is added
-- Simplify mobile interfaces beyond what seems "fair" — the user's cognitive budget is already reduced
-- This partially explains why mobile conversion rates are consistently lower than desktop
-
-**Lower Abandonment Cost** — Alternative apps are one tap away in the app store. Desktop users face higher switching costs (download, install, configure).
-- Mobile users are less tolerant of friction, slow performance, and confusing flows
-- First impression matters more on mobile — users leave faster
-- Every step in a mobile flow must justify its existence; there's no patience for "nice to have" steps
-
-### Mobile Evaluation Checklist
-- [ ] Are primary actions within easy thumb reach (natural zone)?
-- [ ] Does the design work for divided-attention use (transit, walking, multitasking)?
-- [ ] Does the mobile layout leverage progressive disclosure naturally (not trying to be desktop)?
-- [ ] Is the cognitive load budgeted for reduced mobile capacity (brain drain)?
-- [ ] Does every step in the flow justify itself (given low abandonment cost)?
-
----
 
 ## Ethical Guardrails
 

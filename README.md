@@ -90,10 +90,6 @@ Jump to the relevant layer:
 - Users churn after signing up? → **Layer 5 (Product Behavior) → Activation/Onboarding**
 - Engagement is declining? → **Layer 4 (Motivation) → Habit Formation**
 
-## As a ZCode Skill
-
-This framework is designed as a [ZCode](https://zcode.ai) skill for AI-assisted UX evaluation and design. It triggers on UX reviews, usability critiques, conversion optimization, behavioral design, and any question about *why* users behave a certain way in a product.
-
 ## Ethical Use
 
 This framework describes how human psychology works. It includes ethical guardrails:
