@@ -137,3 +137,71 @@ Users stay in a "patch" (page/section) until the perceived yield drops below the
 - **Persistent navigation:** Users shouldn't have to scroll to the top to navigate
 - **Keyboard shortcuts:** Dramatically reduce navigation cost for power users
 - **Predictive navigation:** Suggest where the user might go next (recent items, favorites, frequently visited)
+
+---
+
+## Mere Exposure Effect (Zajonc, 1968)
+
+**Source:** Zajonc, R. B. (1968). "Attitudinal Effects of Mere Exposure." *Journal of Personality and Social Psychology*, 9(2), 1-27.
+
+**Core Finding:** Repeated exposure to a stimulus increases liking — no reward or reinforcement needed. This is one of the most robust findings in social psychology.
+
+**Design Implications:**
+- Consistent design patterns across a product build preference through exposure, not just learnability
+- New design patterns are initially disliked but grow on users with repeated interaction — don't abandon a redesign based only on first-impression feedback
+- Familiar UI conventions are preferred partly because of mere exposure
+- Repeated brand exposure in-product (consistent logo placement, color scheme, typography) increases brand affinity over time
+- Onboarding benefits from using familiar patterns — users already have positive exposure to them from other products
+
+---
+
+## Zeigarnik Effect (1927)
+
+**Source:** Zeigarnik, B. (1927). "Über das Behalten von erledigten und unerledigten Handlungen" (On the Retention of Completed and Uncompleted Tasks). *Psychologische Forschung*, 9, 1-85.
+
+**Core Finding:** Unfinished or interrupted tasks are remembered significantly better than completed ones — up to 90% better recall for incomplete tasks.
+
+**Design Implications:**
+- Profile completion bars, setup checklists, and "2 of 5 steps remaining" leverage the Zeigarnik effect to drive completion
+- Shopping cart indicators ("3 items in your cart") create persistent cognitive tension
+- Unread notification badges work through the same mechanism
+- "Finish setting up your profile" reminders are effective because the brain holds incomplete tasks in active memory
+
+**Caution:**
+- Overuse creates anxiety — too many incomplete indicators overwhelm users
+- Use for 1-2 critical completion tasks, not for every possible incomplete state
+- Always pair with a clear, easy path to completion
+
+---
+
+## Flow State (Csikszentmihalyi, 1975)
+
+**Source:** Csikszentmihalyi, M. (1975). *Beyond Boredom and Anxiety: The Experience of Play in Work and Games*. Jossey-Bass.
+
+**Core Finding:** Flow is a state of optimal experience where challenge matches skill. In flow: time distorts, focus is total, performance peaks, and satisfaction is high.
+
+**The Flow Channel:**
+
+```
+High Challenge
+    │
+    │  ANXIETY ←── Flow ──→ BOREDOM
+    │              (optimal)
+    │
+Low Skill              High Skill
+```
+
+**Design Implications:**
+- Match default difficulty/settings to the user's likely skill level (not the power user's level)
+- Progressive difficulty in onboarding: start simple, add complexity as competence builds
+- Clear, immediate feedback is essential to maintaining flow — users need to know how they're doing
+- Avoid interruptions during flow states (don't show modals, requests, or prompts during active work)
+- Games and productivity tools are the most obvious flow candidates, but any tool that supports deep work should optimize for flow
+- Skill-appropriate defaults are one of the most impactful onboarding decisions
+
+**Flow Killers to Avoid:**
+- Frequent interruptions (notifications during active use)
+- Tasks that are too easy (boredom → disengagement)
+- Tasks that are too hard (anxiety → abandonment)
+- Unclear goals or progress indicators
+- Lag, errors, or unpredictable behavior

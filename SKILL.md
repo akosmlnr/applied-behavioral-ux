@@ -19,16 +19,16 @@ A research-grounded framework for evaluating and designing user experiences. Unl
 
 ```
 Layer 1 — Perception (How users SEE)
-  Gestalt · Yarbus · Fitts · Visual Hierarchy · Attention
+  Gestalt · Yarbus · Fitts · Visual Hierarchy · Attention · Emotional Design · Processing Fluency
        ↓
 Layer 2 — Cognition (How users THINK)
-  Cognitive Load · Miller · Mental Models · Hick · Information Foraging
+  Cognitive Load · Miller · Mental Models · Hick · Information Foraging · Zeigarnik · Flow
        ↓
 Layer 3 — Decision Making (How users CHOOSE)
-  Prospect Theory · Loss Aversion · Nudge · Choice Architecture · Cialdini
+  Prospect Theory · Loss Aversion · Nudge · Choice Architecture · Cialdini · Hyperbolic Discounting
        ↓
 Layer 4 — Motivation (Why users ACT)
-  Self-Determination Theory · Goal Theory · Habit Formation · Reinforcement
+  Self-Determination Theory · Goal Theory · Habit Formation · Peak-End Rule · Social Identity
        ↓
 Layer 5 — Product Behavior (What the product DOES)
   Activation · Onboarding · Retention · Conversion · Trust · Pricing
@@ -77,12 +77,30 @@ Layer 5 — Product Behavior (What the product DOES)
 - **Inattentional Blindness** — Users literally don't see things outside their attention tunnel (don't put critical info next to a busy animation)
 - **Change Blindness** — Users miss gradual changes (use obvious transitions for state changes)
 
+**Emotional Design** (Norman, 2002) — Visual design is not cosmetic; it's functional:
+- **Visceral level** — Immediate emotional reaction to appearance (first 50ms). Attractive interfaces trigger positive affect that improves cognitive performance and problem-solving
+- **Aesthetic-Usability Effect** (Kurosu & Kashimura, 1995) — Users perceive more attractive interfaces as more usable, even when actual usability is identical. Design investment has measurable ROI
+- **Implication:** Beautiful design doesn't just "look nice" — it literally makes users more effective. Never treat visual polish as optional.
+
+**Processing Fluency** (Reber, Winkielman & Schwarz, 1998/2004) — Ease of processing drives preference:
+- People misattribute ease of visual processing to aesthetic preference — things that are easy to perceive are experienced as beautiful
+- Clean typography, familiar layouts, consistent spacing, and clear hierarchy feel "right" because they process fluently
+- **Implication:** Minimalism isn't just a style choice — it leverages a cognitive mechanism. Consistency across a product increases fluency, which increases trust and preference.
+
+**Color Psychology** (Elliot & Maier, 2014) — Color carries meaning and impacts behavior:
+- Color effects are context-dependent (Color-in-Context Theory): red signals danger in achievement contexts but attraction in romantic contexts
+- Color influences cognition, affect, and behavior in consumer decisions
+- **Implication:** CTA colors aren't universal "hacks." Use color strategically to match the emotional tone of the action (green for positive actions, red for warnings/danger, blue for trust/communication)
+
 ### Layer 1 Evaluation Checklist
 - [ ] Does the layout follow a natural scan pattern (F or Z)?
 - [ ] Are Gestalt groupings used intentionally (not creating false relationships)?
 - [ ] Are interactive targets large enough and close enough per Fitts's Law?
 - [ ] Is there exactly ONE visually dominant element (the primary action)?
 - [ ] Are task-critical elements on predicted eye-scan paths?
+- [ ] Does the visual design evoke positive emotional response (visceral level)?
+- [ ] Is the interface visually consistent enough to leverage processing fluency?
+- [ ] Are colors used contextually (not relying on generic "conversion color" myths)?
 
 ---
 
@@ -124,6 +142,21 @@ Layer 5 — Product Behavior (What the product DOES)
 - **Navigation cost** — Users minimize cost of finding next valuable item (reduce clicks, provide breadcrumbs, persistent navigation)
 - **Implication:** If users can't "smell" the value of a next click, they leave. Every link, button, and nav item must promise clear value.
 
+**Mere Exposure Effect** (Zajonc, 1968) — Repeated exposure increases preference, no reward needed:
+- Familiar interfaces are preferred partly because of repeated exposure, not just usability
+- New design patterns are initially disliked but grow on users with interaction
+- **Implication:** Consistency across a product isn't just about learnability — it builds preference through exposure. Don't redesign core patterns frequently.
+
+**Zeigarnik Effect** (1927) — Unfinished tasks are remembered significantly better than completed ones:
+- Up to 90% better recall for interrupted/incomplete tasks vs. completed ones
+- Creates persistent cognitive tension: "2 of 5 items in cart," "profile 70% complete"
+- **Implication:** Use progress indicators, incomplete states, and gentle reminders to drive task completion. But don't overuse — persistent tension becomes anxiety.
+
+**Flow State** (Csikszentmihalyi, 1975) — Optimal experience when challenge matches skill:
+- Users enter flow when a task is neither boring (too easy) nor overwhelming (too hard)
+- In flow: time distorts, focus is total, performance peaks, satisfaction is high
+- **Implication:** Design progressive difficulty. Match default settings to user skill level. Provide clear, immediate feedback to maintain the flow channel. Onboarding should start easy and ramp gradually.
+
 ### Layer 2 Evaluation Checklist
 - [ ] Can a first-time user complete the primary task without learning new concepts?
 - [ ] Is information chunked into groups of ≤5 items?
@@ -131,6 +164,9 @@ Layer 5 — Product Behavior (What the product DOES)
 - [ ] Are choice points limited to ≤7 visible options?
 - [ ] Does every link/CTA have strong information scent?
 - [ ] Has extraneous cognitive load been eliminated?
+- [ ] Is the experience consistent enough to leverage mere exposure preference?
+- [ ] Are there appropriate progress indicators to leverage the Zeigarnik effect?
+- [ ] Does the challenge level match the user's skill (flow channel)?
 
 ---
 
@@ -167,6 +203,33 @@ Layer 5 — Product Behavior (What the product DOES)
 6. **Scarcity** — Limited availability increases value (limited-time offers, waitlists, capacity indicators)
 7. **Unity** — Shared identity ("for people like you") — the most powerful and least used principle
 
+**Endowment Effect** (Thaler, 1980/1991) — People value what they own more than what they don't:
+- Users demand more to give up a feature/product than they would pay to acquire it
+- The mere act of ownership or use increases perceived value
+- **Implication:** Free trials, sample accounts, and "try before you buy" create psychological ownership. Losing the product after a trial feels like a loss (interacting with loss aversion). Let users customize and invest during trials to maximize endowment.
+
+**Status Quo Bias** (Samuelson & Zeckhauser, 1988) — People disproportionately stick with defaults:
+- Distinct from mere inertia — changing defaults feels like losing something (endowment + loss aversion combined)
+- The initial configuration of a product has outsized long-term impact on behavior
+- **Implication:** Defaults are the most powerful design tool. Set the optimal choice as default. Make changing settings require deliberate action. The first experience is the permanent experience for most users.
+
+**Regulatory Focus Theory** (Higgins, 1997) — Motivation has two distinct directions:
+- **Promotion focus** — Approach gains, ideals, aspirations ("Gain more followers," "Unlock your potential")
+- **Prevention focus** — Avoid losses, fulfill duties, prevent problems ("Don't miss important messages," "Protect your data")
+- Users shift between states contextually; matching copy to the user's current state doubles effectiveness
+- **Implication:** Onboarding and upsell copy should use promotion focus (aspirational). Security, cancellation, and warning copy should use prevention focus. Test both frames for critical conversion points.
+
+**Construal Level Theory** (Trope & Liberman, 2010) — Psychological distance determines abstraction:
+- **Near (concrete):** Immediate actions need specific, concrete language ("Click here to add your first task")
+- **Far (abstract):** Long-term goals need high-level, value-driven language ("Become more productive")
+- Psychological distance can be temporal, spatial, social, or hypothetical
+- **Implication:** Future-facing messaging (landing pages, vision, annual plans) should paint abstract value. Immediate actions (CTAs, form fields, onboarding steps) should be painfully concrete and specific.
+
+**Hyperbolic Discounting** (Ainslie, 1975) — Present rewards are overweighted:
+- The subjective value of a reward declines hyperbolically with delay — people choose smaller-sooner over larger-later when the smaller reward is immediate
+- Explains why users abandon long flows, skip setup, and prefer instant gratification
+- **Implication:** Deliver value as fast as possible. Every second of delay between action and reward is conversion leakage. "Instant" previews, immediate feedback, and zero-delay confirmations are not luxuries — they're behavioral necessities.
+
 ### Layer 3 Evaluation Checklist
 - [ ] Are outcomes framed relative to a reference point (not just absolute)?
 - [ ] Is the default option the one you want users to choose?
@@ -174,6 +237,10 @@ Layer 5 — Product Behavior (What the product DOES)
 - [ ] Are choices limited to prevent decision paralysis?
 - [ ] Is at least one Cialdini principle applied ethically?
 - [ ] Does the pricing/choice structure use anchoring or decoy effects?
+- [ ] Does the free trial/evaluation create psychological ownership (endowment effect)?
+- [ ] Is the copy matching the user's regulatory state (promotion vs. prevention)?
+- [ ] Is near-action language concrete and far-action language value-driven (CLT)?
+- [ ] Is value delivered immediately or as close to instant as possible?
 
 ---
 
@@ -213,6 +280,26 @@ Layer 5 — Product Behavior (What the product DOES)
 - **If both are present:** Just need a prompt (notification, contextual trigger)
 - **Implication:** For every desired behavior, ensure all three elements are present.
 
+**Peak-End Rule** (Kahneman et al., 1993) — Experiences are remembered by the most intense moment and the final moment, not by duration:
+- Duration neglect: users don't evaluate an experience by how long it took, but by its peak and end
+- A single terrible interaction at the end can override months of good experience
+- **Implication:** Invest heavily in the "end" of every interaction — success states, completion animations, satisfying closures, thank-you screens. The last touchpoint disproportionately shapes memory and return probability.
+
+**Expectancy-Value Theory** (Eccles & Wigfield, 2000) — Motivation requires both belief in success AND perceived value:
+- Users engage when they believe they can succeed (expectancy) AND value the outcome (subjective task value)
+- Task value has four components: importance, interest, utility value, and cost (friction)
+- **Implication:** Onboarding must establish both "This will be easy" (expectancy) AND "This will be valuable" (value). Removing friction (cost) and demonstrating utility are dual levers. Show a clear path to success before asking for effort.
+
+**Social Identity Theory** (Tajfel & Turner, 1979) — People derive self-esteem from group membership:
+- In-group favoritism: users who identify with your product's community show systematic preference and reduced churn
+- Shared identity ("designed for designers," community features, team identity) creates attachment that goes beyond functional value
+- **Implication:** Community, team identity, and branded language aren't nice-to-haves — they create switching costs through identity, not just data. Users who identify with your product's tribe are significantly harder to switch away from.
+
+**Goal Setting Theory** (Locke & Latham, 1990) — Specific, difficult goals drive higher performance:
+- Specific goals consistently outperform vague goals ("write 500 words today" > "write more")
+- Goals must be difficult enough to motivate but achievable with commitment and feedback
+- **Implication:** Product goals, streaks, and challenges should be specific and moderately challenging. Vague "improve your workflow" goals don't motivate. Pair goals with clear feedback mechanisms and visible progress tracking.
+
 ### Layer 4 Evaluation Checklist
 - [ ] Does the experience support user autonomy (choices, undo, customization)?
 - [ ] Is there a visible sense of progress toward a goal?
@@ -220,6 +307,10 @@ Layer 5 — Product Behavior (What the product DOES)
 - [ ] Does the product use variable rewards to sustain interest?
 - [ ] For every key action: is Motivation × Ability × Prompt all present?
 - [ ] Is the product designed for repeated context-dependent use (habit)?
+- [ ] Are the "peak" and "end" moments of every flow deliberately designed?
+- [ ] Does the experience establish both expectancy ("I can do this") and value ("This matters")?
+- [ ] Does the product foster social identity / community belonging?
+- [ ] Are goals specific and moderately challenging (not vague)?
 
 ---
 

@@ -187,3 +187,94 @@ Users prefer the middle option when presented with three:
 - When users know exactly what they want (search > browse)
 - When differences between options are clear and meaningful
 - When users are experts in the domain
+
+---
+
+## Endowment Effect (Thaler, 1980/1991)
+
+**Sources:**
+- Thaler, R. H. (1980). "Toward a Positive Theory of Consumer Choice." *Journal of Economic Behavior and Organization*, 1(1), 39-60.
+- Thaler, R. H. (1991). "The Endowment Effect, Loss Aversion, and Status Quo Bias in Markets." *Journal of Economic Perspectives*, 5(1), 193-206.
+
+**Core Finding:** People demand more to give up an object than they would pay to acquire it. The mere act of ownership increases perceived value — often by 2-3×.
+
+**How it connects to other principles:**
+- The endowment effect is partly explained by loss aversion (giving up something feels like a loss)
+- Combined with status quo bias, it explains why defaults are so powerful
+- It's why trials work: users "own" the product temporarily, and giving it up feels like losing
+
+**Design Implications:**
+- Free trials create psychological ownership — letting users customize, save data, and invest during trials maximizes endowment
+- "Try before you buy" is powerful because it creates ownership before purchase
+- Freemium models work because free-tier users already "own" features; upgrading is about not losing them
+- Show users their accumulated data/content before asking them to upgrade — it's their endowment
+
+---
+
+## Status Quo Bias (Samuelson & Zeckhauser, 1988)
+
+**Source:** Samuelson, W., & Zeckhauser, R. (1988). "Status Quo Bias in Decision Making." *Journal of Risk and Uncertainty*, 1(1), 7-59.
+
+**Core Finding:** People disproportionately stick with the current/default option, deviating from rational choice theory. This is distinct from mere inertia — changing defaults feels like losing something (endowment effect + loss aversion combined).
+
+**Design Implications:**
+- The initial configuration of a product has outsized long-term impact — for most users, it IS the permanent configuration
+- Defaults are the most powerful design tool available
+- Make changing settings require deliberate action (but never prevent it)
+- If most users should use a feature, enable it by default
+- Annual billing as default works partly because switching to monthly feels like "losing" savings
+
+---
+
+## Regulatory Focus Theory (Higgins, 1997)
+
+**Source:** Higgins, E. T. (1997). "Beyond Pleasure and Pain." *American Psychologist*, 52(12), 1280-1300.
+
+**Core Finding:** Motivation has two distinct regulatory orientations:
+
+| Focus | Direction | Example Language |
+|---|---|---|
+| **Promotion** | Approach gains, ideals, aspirations | "Gain more followers," "Unlock your potential," "Achieve your goals" |
+| **Prevention** | Avoid losses, fulfill duties, prevent problems | "Don't miss important messages," "Protect your data," "Avoid costly mistakes" |
+
+**Design Implications:**
+- Match copy to the user's current regulatory state — doubling effectiveness has been shown
+- **Onboarding and upsell:** Use promotion focus (aspirational, growth-oriented)
+- **Security, cancellation flows, warnings:** Use prevention focus (protection, duty)
+- **Test both frames** for critical conversion points — the same feature can be promoted either way
+- Users who feel safe/satiated tend toward promotion focus; users who feel threatened/uncertain tend toward prevention focus
+- Error messages can be reframed: "You missed a field" (prevention) vs. "Almost there — just one more step" (promotion)
+
+---
+
+## Construal Level Theory (Trope & Liberman, 2010)
+
+**Source:** Trope, Y., & Liberman, N. (2010). "Construal-Level Theory of Psychological Distance." *Psychological Review*, 117(2), 440-463.
+
+**Core Finding:** Psychological distance (temporal, spatial, social, hypothetical) determines abstraction level:
+- **Near (concrete):** Immediate actions are represented with specific details
+- **Far (abstract):** Future outcomes are represented with high-level, value-driven language
+
+**Design Implications:**
+- **Landing pages and vision:** Abstract, value-driven ("Become more productive," "Transform your workflow")
+- **CTAs and form fields:** Painfully concrete ("Click here to add your first task," "Enter your work email")
+- **Long-term value propositions:** High-level framing (benefits, transformation, identity)
+- **Immediate action steps:** Low-level framing (specific clicks, inputs, time estimates)
+- **Annual plans vs. monthly:** Annual = far = abstract benefits. Monthly = near = concrete price
+- A common mistake: using abstract language for immediate actions ("Get started" → too vague) or concrete language for long-term vision ("Click this button to save $120 this year" → too transactional)
+
+---
+
+## Hyperbolic Discounting (Ainslie, 1975)
+
+**Source:** Ainslie, G. (1975). "Specious Reward: A Behavioral Theory of Impulsiveness and Impulse Control." *Psychological Bulletin*, 82(4), 463-496.
+
+**Core Finding:** The subjective value of a reward declines hyperbolically with delay. People choose smaller-sooner rewards over larger-later ones when the smaller reward is immediate — even when they would rationally prefer the larger reward.
+
+**Design Implications:**
+- Explains why users abandon long flows, skip setup, and prefer instant gratification
+- **Deliver value as fast as possible** — every second of delay between action and reward is conversion leakage
+- "Instant" previews, immediate feedback, and zero-delay confirmations are not luxuries — they're behavioral necessities
+- Long-term rewards (annual savings, better outcomes) must be made tangible now, not deferred
+- Show the immediate benefit AND the long-term benefit: "Start free now — save $240/year"
+- Reduce any delay between the user's action and the product's response (optimistic UI updates, skeleton screens, instant saves)

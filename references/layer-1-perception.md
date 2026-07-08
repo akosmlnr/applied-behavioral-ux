@@ -99,3 +99,77 @@
 - Users have learned to ignore areas that typically contain ads (top banners, right sidebars)
 - Application: Don't place critical content in ad-like positions or formats
 - If using a banner for legitimate content, make it clearly non-ad (different styling)
+
+---
+
+## Emotional Design (Norman, 2002)
+
+**Source:** Norman, D. (2002). "Emotion & Design: Attractive Things Work Better." *Interactions*, 9(4), 36-42.
+
+**Core Finding:** Norman proposed three levels of emotional design that directly impact cognitive performance:
+
+| Level | Description | UX Implication |
+|---|---|---|
+| **Visceral** | Immediate emotional reaction to appearance (first 50ms) | First impressions are functional, not cosmetic. Attractive interfaces trigger positive affect that improves problem-solving. |
+| **Behavioral** | Usability, performance, feel of use | The "doing" level — does the product perform well? Errors, lag, and friction here create frustration. |
+| **Reflective** | Meaning, self-image, personal satisfaction | Brand, story, and identity. "What does using this product say about me?" |
+
+**Key Insight:** Positive visceral reactions literally improve cognitive performance. Attractive interfaces make users more tolerant of minor usability issues and more creative in problem-solving. Visual design is not a luxury layer — it's a performance layer.
+
+---
+
+## Aesthetic-Usability Effect (Kurosu & Kashimura, 1995)
+
+**Source:** Kurosu, M., & Kashimura, K. (1995). "Apparent Usability vs. Inherent Usability." *CHI '95 Conference Companion*.
+
+**Core Finding:** Users consistently rate more aesthetically pleasing interfaces as more usable — even when actual usability is identical across variations.
+
+**Implications:**
+- Design investment has measurable ROI beyond "looking nice"
+- Users perceive fewer problems and report higher satisfaction with attractive designs
+- The effect persists even when users are told to evaluate usability independently of appearance
+- This is one reason redesigns that "look better" often get higher satisfaction scores even when functionality hasn't changed
+
+---
+
+## Processing Fluency (Reber, Winkielman & Schwarz, 1998/2004)
+
+**Sources:**
+- Reber, R., Winkielman, P., & Schwarz, N. (1998). "Effects of Perceptual Fluency on Affective Judgments." *Psychological Science*, 9(1), 45-48.
+- Reber, R., Schwarz, N., & Winkielman, P. (2004). "Processing Fluency and Aesthetic Pleasure: Is Beauty in the Perceiver's Processing Experience?" *Personality and Social Psychology Review*, 8(4), 364-382.
+
+**Core Finding:** Ease of visual processing produces positive affect. People misattribute processing ease to aesthetic preference — things that are easy to perceive are experienced as beautiful and trustworthy.
+
+**Design Implications:**
+- Clean typography, familiar layouts, consistent spacing, and clear hierarchy feel "right" because they process fluently
+- Consistency across a product increases fluency → increases trust and preference
+- Minimalism leverages a cognitive mechanism, not just a style preference
+- High fluency signals: legible fonts, predictable placement, clear grouping, low visual noise
+- Low fluency signals: unusual fonts, inconsistent layouts, cluttered screens, unfamiliar patterns
+
+**When to Use Disfluency Intentionally:**
+- Important disclaimers or terms of service (slightly harder-to-read text increases attention and memory)
+- Warning messages (disfluency signals "pay attention")
+- Learning content where deeper processing is desired
+- Not for primary UI, navigation, or CTAs — always use fluency there
+
+---
+
+## Color Psychology (Elliot & Maier, 2014)
+
+**Source:** Elliot, A. J., & Maier, M. A. (2014). "Color Psychology: Effects of Perceiving Color on Psychological Functioning in Humans." *Annual Review of Psychology*, 65, 95-120.
+
+**Core Finding:** The most comprehensive review of color-psychology research. Color carries meaning and impacts affect, cognition, and behavior. Effects are context-dependent (Color-in-Context Theory).
+
+**Key Findings:**
+- Red in achievement contexts → avoidance, danger (but attractiveness in romantic contexts)
+- Blue → trust, communication, calm (highly effective for SaaS, finance, healthcare)
+- Green → approach, go, nature, money (effective for positive action CTAs)
+- Color effects are not universal "hacks" — they depend on the user's current task and context
+- Contrast and saturation matter more than hue for visibility; hue matters for emotional tone
+
+**Design Implications:**
+- CTA color should match the emotional tone of the action (positive action = warm/positive color, warning = red)
+- Don't rely on "green button converts better" myths — test in your specific context
+- Use color consistently for the same semantic meaning across the product
+- Ensure sufficient contrast for accessibility (WCAG AA minimum)

@@ -222,3 +222,90 @@ Below a certain threshold of combined Motivation + Ability, no Prompt will trigg
 | Spark (direct prompt) | "Upgrade now" button | When motivation is present |
 | Facilitator (ability prompt) | "One-click to complete setup" | When motivation is moderate |
 | Signal (behavior prompt) | "New message" notification | When behavior is familiar |
+
+---
+
+## Peak-End Rule (Kahneman et al., 1993)
+
+**Sources:**
+- Kahneman, D., Fredrickson, B. L., Schreiber, C. A., & Redelmeier, D. A. (1993). "When More Pain Is Preferred to Less: Adding a Better End." *Psychological Science*, 4(6), 401-405.
+- Redelmeier, D. A., & Kahneman, D. (1996). "Patients' Memories of Painful Medical Treatments." *Pain*, 66(1), 3-8.
+
+**Core Finding:** People evaluate experiences based on the most intense moment (peak) and the final moment (end), largely ignoring duration. This is called "duration neglect."
+
+**Key Findings:**
+- A colonoscopy with a brief extra painful ending was remembered as worse than a longer procedure with a gentle ending — even though the shorter one had less total pain
+- Users' overall product perception is NOT a sum of every interaction — it's a function of the best and most recent moments
+- A single terrible interaction at the end can override months of good experience
+
+**Design Implications:**
+- Invest heavily in the "end" of every interaction:
+  - **Checkout completion:** celebration animation, clear confirmation, receipt
+  - **Form submission:** satisfying success state, not just a blank form
+  - **Session end:** save progress, smooth sign-off, "see you soon" messaging
+  - **Cancellation flow:** respectful exit, not friction and guilt
+- The last touchpoint disproportionately shapes memory and return probability
+- Error recovery is critical — if something goes wrong, the resolution (the "end") matters more than the error itself
+- For onboarding flows, the final step should be the most delightful, not a tedious "confirm your email" step
+
+---
+
+## Expectancy-Value Theory (Eccles & Wigfield, 2000)
+
+**Source:** Eccles, J. S., & Wigfield, A. (2000). "Expectancy-Value Theory of Achievement Motivation." *Contemporary Educational Psychology*, 25(1), 68-81.
+
+**Core Finding:** Achievement-related choices are driven by two factors:
+1. **Expectancy of success** — "Can I do this?"
+2. **Subjective task value** — "Is this worth doing?"
+
+Task value has four components:
+- **Importance** — Does this matter to me?
+- **Interest** — Is this inherently interesting?
+- **Utility value** — Will this help me achieve other goals?
+- **Cost** — What effort, time, or sacrifice does this require?
+
+**Design Implications:**
+- Onboarding must establish BOTH "This will be easy" (expectancy) AND "This will be valuable" (value)
+- Show social proof and success stories → increases expectancy ("people like me succeed with this")
+- Demonstrate immediate utility → shows value ("you've already saved 2 hours this week")
+- Remove friction → reduces perceived cost
+- Vague value propositions fail because they don't address utility specifically
+- The most common onboarding failure: assuming value is obvious while making the experience feel hard (low expectancy + unclear value = abandonment)
+
+---
+
+## Social Identity Theory (Tajfel & Turner, 1979)
+
+**Source:** Tajfel, H., & Turner, J. C. (1979). "An Integrative Theory of Intergroup Conflict." In W. G. Austin & S. T. Worchel (Eds.), *The Social Psychology of Intergroup Relations*. Brooks/Cole.
+
+**Core Finding:** People derive self-esteem from group membership and show systematic in-group favoritism. Users who identify with a product's community show stronger attachment and lower churn.
+
+**Design Implications:**
+- Community features, team identity, and branded language create social identity that increases product attachment
+- "Designed for designers," "Built by developers, for developers" — these taglines leverage social identity
+- User communities, forums, Slack/Discord groups, and user groups are not just support channels — they create identity-based switching costs
+- Users who identify with your product's tribe are significantly harder to switch away from
+- Consider: Does your product have a clear "who this is for" identity? Can users see themselves as part of a group?
+
+---
+
+## Goal Setting Theory (Locke & Latham, 1990)
+
+**Source:** Locke, E. A., & Latham, G. P. (1990). *A Theory of Goal Setting & Task Performance*. Prentice-Hall.
+
+**Core Finding:** 25+ years of research showing that specific, difficult goals consistently produce higher performance than easy, vague, or absent goals — provided there is commitment, feedback, and task clarity.
+
+**Key Conditions for Effective Goals:**
+1. **Specific** — "Write 500 words" outperforms "Write more"
+2. **Difficult (but achievable)** — Easy goals don't motivate; impossible goals demotivate
+3. **Commitment** — User must accept the goal (self-set or committed to)
+4. **Feedback** — Progress tracking is essential; goals without feedback don't drive performance
+5. **Task clarity** — User must know HOW to achieve the goal
+
+**Design Implications:**
+- Product goals, streaks, and challenges should be specific and moderately challenging
+- Vague "improve your workflow" goals don't motivate — use "complete 5 tasks today"
+- Pair goals with visible progress tracking (completeness bars, streak counters, milestone markers)
+- Allow users to set their own goals when possible (increases commitment)
+- Start with easier goals and increase difficulty as competence builds (flow channel alignment)
+- Daily/weekly goals with feedback loops > long-term goals without checkpoints
